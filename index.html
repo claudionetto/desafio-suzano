@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote uma arvore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="modal hidden">
+        <div class="modal-wrapper">
+            <div class="btn-close" onclick="toggleModal()">&times</div>
+
+            <div class="modal-content">
+            </div>
+            <button class="modal-button">Doar</button>    
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="./images/clipart796772.png" alt="Logo">
+            <span>Adote uma Arvore</span>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Fale Conosco</a>
+            <a href="#">Meu Perfil</a>
+        </nav>
+    </header>
+    <main>
+        <section class="mapas">
+
+            <select name="cidade" class="cidades" id="cidades">
+                <option value="sadj">Santo Antonio do Jardim</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="sp">São Paulo</option>
+            </select>
+            
+            <div class="mapa">
+                <i id="tree1" class="ph-fill ph-tree arvore"></i>
+                <i id="tree2" class="ph-fill ph-tree arvore"></i>
+                <i id="tree3" class="ph-fill ph-tree arvore"></i>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>
